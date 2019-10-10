@@ -1,0 +1,11 @@
+entity Dossier {
+	nom String
+}
+
+entity Client {
+	nom String
+}
+
+relationship ManyToMany {
+	Dossier{client(nom)} to Client{dossier}
+}

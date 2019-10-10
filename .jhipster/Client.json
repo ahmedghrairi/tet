@@ -1,0 +1,28 @@
+{
+    "name": "Client",
+    "fields": [
+        {
+            "fieldName": "nom",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "dossier",
+            "otherEntityRelationshipName": "client",
+            "relationshipName": "dossier",
+            "otherEntityField": "id",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20191010150424",
+    "entityTableName": "client",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
